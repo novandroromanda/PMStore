@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 7%;
+    padding: 1rem 7%;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid var(--primary);
     position: fixed;
@@ -56,7 +56,7 @@ body {
 
 
 .navbar .navbar-logo {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #000000;
     font-style: italic;
@@ -69,7 +69,7 @@ body {
 .navbar .navbar-nav a {
     color: #000000;
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin: 0 1rem;
 }
 
@@ -125,14 +125,15 @@ body {
 
 .hero .content {
     padding: 1.4rem 7%;
-    max-width: 80rem;
+    max-width: 50rem;
 }
 
 .hero .content h1{
-    font-size: 4em;
+    font-size: 2rem;
     color: #000000;
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
     line-height: 1.3;
+    padding-bottom: 20px;
 }
 
 .hero .content h1 span {
@@ -141,17 +142,18 @@ body {
 
 .hero .content p {
     color: #000000;
-    font-size: 1.6rem;
+    font-size: 1rem;
     margin-top: 1rem;
     line-height: 1.4;
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    padding-bottom: 10px;
 }
 
 .hero .content .cta {
     margin-top: 1rem;
     display: inline-block;
     padding: 1rem 3rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #fff;
     background-color: var(--primary);
     border-radius: 0.rem;
@@ -165,12 +167,14 @@ body {
 
 .about h2, .menu h2, .contact h2 {
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .about h2 span, .menu h2 span, .contact h2 span {
     color: var(--primary);
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .about .row {
@@ -193,6 +197,7 @@ body {
 .about .row .content h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .about .row .content h3 span {
@@ -201,10 +206,11 @@ body {
 
 .about .row .content p {
     margin-bottom: 0.8rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.6rem;
     text-align: justify;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 /* img */
@@ -214,6 +220,7 @@ body {
     align-items: center;
     width: 85%;
     margin: auto;
+    margin-top: 40px;
 }
 
 img {
@@ -238,9 +245,10 @@ img {
     text-align: center;
     max-width: 70rem;
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 /* sider */
@@ -281,8 +289,13 @@ img {
 }
 
 .slider .slide p {
+    font-size: 2rem;
+    color: #000000;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.slider .slide p span {
     font-size: 1rem;
-    color: #666;
 }
 
 .navigation {
@@ -327,11 +340,13 @@ img {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .history-header p {
     font-size: 1.2em;
     color: #555;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .history-slider {
@@ -369,12 +384,14 @@ img {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #222;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .history-text p {
     font-size: 1em;
     margin-bottom: 10px;
     color: #555;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 /* Responsif */
@@ -440,43 +457,35 @@ img {
     color: #000000;
 }
 
-/* footer */
+/* Footer Styles */
 footer {
-    background-color: black;
-    text-align: center;
-    padding: 3rem 0 3rem;
-    margin-top: 3rem;
-    position: relative;
+    margin-top: 100px;
 }
 
-footer .footer_logo {
-    padding-left: 10rem;
-    padding-bottom: 3rem;
+.footer_logo {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer .footer_logo img {
-    width: 200px;
+.footer_logo div:first-child {
+    text-align: left;
 }
 
-footer .footer_logo a:hover, 
-footer .links a:hover {
-    color: var(--primary);
+.footer_logo div:last-child {
+    text-align: right;
 }
 
-footer .credit {
-    font-size: 2rem;
-    margin: auto;
-    margin-right: 10rem;
-}
 
-footer .credit a {
-    color: var(--primary);
-    font-weight: 700;
-}
+@media (max-width: 768px) {
+    footer .footer_logo {
+        flex-direction: column;
+        align-items: center;
+    }
 
-footer .credit p {
-    color: var(--bg);
+    footer .footer_logo img {
+        margin: 0 0 1rem;
+    }
 }
 
 
